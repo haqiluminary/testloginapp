@@ -13,7 +13,7 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/login`, { name, password });
+            const response = await axios.post("https://testapiloginhaqi.azurewebsites.net/api/login", { name, password });
             Cookies.set('name', response.data.data.name);
             router.push('/');
         } catch (error) {
