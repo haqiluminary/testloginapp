@@ -3,8 +3,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/navigation';
-import "./../globals.css";	
-require('dotenv').config()
+import "./../globals.css";
 
 export default function Login() {
     const [name, setName] = useState('');
